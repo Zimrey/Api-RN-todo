@@ -11,6 +11,9 @@ app.use(cors());
 const db = require("./models");
 
 app.use("/api/v1", router);
+app.use("/", (req, res) => {
+    res.send("deploy");
+});
 
 app.listen(PORT, () => {
     console.log(`App running on PORT ${PORT}`);
