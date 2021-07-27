@@ -12,7 +12,7 @@ const db = require("./models");
 
 app.use("/api/v1", router);
 app.use("/", (req, res) => {
-    res.send("deploy");
+    res.send("deploy by Sukma Aspriliyawan");
 });
 
 app.listen(PORT, () => {
